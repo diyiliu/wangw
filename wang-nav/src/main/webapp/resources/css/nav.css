@@ -70,71 +70,132 @@ body {
     position: relative;
 }
 
-.content .addForm {
+.content .addPanel {
+    display: none;
     z-index: 9999;
     position: absolute;
     top: 50%;
     left: 50%;
     margin: -34px 0 0 -360px;
-
     width: 720px;
-    height: 68px;
+    height: 88px;
     background-color: #f9faf9;
     text-align: center;
-    padding-top: 20px;
     box-sizing: border-box;
     box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.2);
 }
+.content .addPanel .title{
+    height: 20px;
+    background-color: #FFFFFF;
+    margin-bottom: 20px;
+    overflow: hidden;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);;
+}
 
-.content .addForm form > input {
+.content .addPanel .title h3{
+    width: 50px;
+    line-height: 20px;
+    float: left;
+    font-size: 12px;
+    font-weight: bold;
+    color: #545454;
+    padding-left:2px;
+}
+
+.content .addPanel .title .close{
+    width: 20px;
+    height: 20px;
+    float: right;
+    position: relative;
+}
+
+.content .addPanel .title .close a{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.content .addPanel .title .close span{
+    display: block;
+    width: 14px;
+    border-top: 1px solid #545454;
+    position: absolute;
+    top: 9px;
+    left: 2px;
+}
+
+.content .addPanel .title .close span:nth-child(1){
+    transform: rotateZ(45deg);
+}
+
+.content .addPanel .title .close span:nth-child(2){
+    transform: rotateZ(-45deg);
+}
+
+.content .addPanel .title .close a:hover span{
+    border: 1px solid #343434;
+}
+
+
+
+.content .addPanel form > input {
     line-height: 28px;
     margin-left: 10px;
     border-radius: 2px;
     box-sizing: border-box;
 }
 
-.content .addForm form > input[type=text] {
+.content .addPanel form > input[type=text] {
     padding-left: 10px;
 }
 
-.content .addForm form .name {
+.content .addPanel form .name {
     width: 120px;
 }
 
-.content .addForm form .address {
+.content .addPanel form .url {
     width: 260px;
 }
 
-.content .addForm form .type {
+.content .addPanel form .type {
     width: 120px;
 }
 
-.content .addForm form .save {
+.content .addPanel form .save {
     background-color: #67aada;
     color: #f8f9fa;
     width: 100px;
     cursor: pointer;
 }
 
-.content .addForm form .type:focus {
+.content .addPanel form .type:focus {
     border-radius: 2px 2px 0 0;
 }
 
-.content .addForm form .type:focus + .select {
+.content .addPanel form .type:focus + .select {
     display: block;
 }
 
-.content .addForm .select {
+.content .addPanel .typeSelect{
+    width: 120px;
+    height: 28px;
+    line-height: 28px;
+    font-size: 14px;
+    border: 0;
+    outline: none;
+}
+
+.content .addPanel .select {
     display: none;
     background-color: #FFF;
     width: 120px;
     position: absolute;
     right: 148px;
-    top: 48px;
+    top: 68px;
     box-sizing: border-box;
 }
 
-.content .addForm .select span {
+.content .addPanel .select span {
     display: block;
     width: 120px;
     line-height: 25px;
@@ -144,7 +205,7 @@ body {
     transition: all 200ms;
 }
 
-.content .addForm .select span:hover {
+.content .addPanel .select span:hover {
     background-color: #d0d2d7;
 }
 

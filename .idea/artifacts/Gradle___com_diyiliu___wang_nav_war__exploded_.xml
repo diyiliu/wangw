@@ -1,6 +1,6 @@
 <component name="ArtifactManager">
-  <artifact type="exploded-war" name="Gradle : com.diyiliu : wang-nav-1.0.war (exploded)">
-    <output-path>$PROJECT_DIR$/wang-nav/build/libs/exploded/wang-nav-1.0.war</output-path>
+  <artifact type="exploded-war" name="Gradle : com.diyiliu : wang-nav.war (exploded)">
+    <output-path>$PROJECT_DIR$/wang-nav/build/libs/exploded/wang-nav.war</output-path>
     <properties id="gradle-properties">
       <options external-project-path="$PROJECT_DIR$">
         <manifest>TWFuaWZlc3QtVmVyc2lvbjogMS4wDQoNCg==</manifest>
@@ -8,9 +8,9 @@
     </properties>
     <root id="root">
       <element id="directory" name="META-INF">
-        <element id="file-copy" path="$PROJECT_DIR$/wang-nav/build/libs/exploded/wang-nav-1.0.war/META-INF/MANIFEST.MF" />
+        <element id="file-copy" path="$PROJECT_DIR$/wang-nav/build/libs/exploded/wang-nav.war/META-INF/MANIFEST.MF" />
       </element>
-      <element id="javaee-facet-resources" facet="wang-nav/web/Web Gradle : wang-nav-1.0.war" />
+      <element id="javaee-facet-resources" facet="wang-nav/web/Web Gradle : wang-nav.war" />
       <element id="directory" name="WEB-INF">
         <element id="directory" name="classes">
           <element id="module-output" name="wang-nav" />
@@ -24,7 +24,11 @@
           <element id="library" level="project" name="Gradle: org.springframework:spring-aop:4.3.12.RELEASE" />
           <element id="library" level="project" name="Gradle: org.springframework:spring-tx:4.3.12.RELEASE" />
           <element id="library" level="project" name="Gradle: org.springframework:spring-jdbc:4.3.12.RELEASE" />
+          <element id="library" level="project" name="Gradle: com.alibaba:druid:1.1.2" />
+          <element id="library" level="project" name="Gradle: mysql:mysql-connector-java:5.1.38" />
+          <element id="library" level="project" name="Gradle: javax.servlet:servlet-api:2.5" />
           <element id="library" level="project" name="Gradle: javax.servlet:jstl:1.2" />
+          <element id="library" level="project" name="Gradle: javax.servlet.jsp:jsp-api:2.2" />
           <element id="library" level="project" name="Gradle: com.fasterxml.jackson.core:jackson-databind:2.9.2" />
           <element id="library" level="project" name="Gradle: ch.qos.logback:logback-classic:1.2.3" />
           <element id="library" level="project" name="Gradle: org.springframework:spring-core:4.3.12.RELEASE" />
@@ -35,8 +39,6 @@
           <element id="library" level="project" name="Gradle: ch.qos.logback:logback-core:1.2.3" />
           <element id="library" level="project" name="Gradle: org.slf4j:slf4j-api:1.7.25" />
           <element id="library" level="project" name="Gradle: commons-logging:commons-logging:1.2" />
-          <element id="file-copy" path="$PROJECT_DIR$/../../../Local/repo/.gradle/caches/modules-2/files-2.1/javax.servlet/servlet-api/2.5/5959582d97d8b61f4d154ca9e495aafd16726e34/servlet-api-2.5.jar" />
-          <element id="file-copy" path="$PROJECT_DIR$/../../../Local/repo/.gradle/caches/modules-2/files-2.1/javax.servlet.jsp/jsp-api/2.2/5bf0c26ef77df58c7c28be2d9d52246f2b437a54/jsp-api-2.2.jar" />
         </element>
       </element>
     </root>

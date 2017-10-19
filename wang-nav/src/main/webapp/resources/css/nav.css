@@ -1,0 +1,205 @@
+@charset "UTF-8";
+
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6,
+pre, code, form, fieldset, legend, input, textarea, p, blockquote,
+th, td {
+    margin: 0;
+    padding: 0
+}
+
+a:hover, a:visited, a:link, a:active {
+    text-decoration: none;
+    color: #343434;
+}
+
+ol, ul {
+    list-style: none
+}
+
+input {
+    border: 0;
+}
+
+input:focus {
+    outline: none;
+}
+
+body {
+    background: url("../img/background01.jpg") no-repeat center fixed;
+    background-size: cover;
+}
+
+.search, .content{
+
+    box-shadow: 0 0 1px 1px rgba(0,0,0,0.02);
+}
+
+.search {
+    width: 800px;
+    height: 50px;
+    margin: 0 auto;
+    margin-top: 150px;
+    margin-bottom: 50px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.search input{
+    line-height: 38px;
+    box-sizing: border-box;
+}
+
+.search input[type=text] {
+    width: 450px;
+    padding-left: 10px;
+}
+
+.search input[type=submit] {
+    width: 150px;
+    text-align: center;
+    background-color: #f6f7f7;
+    color: #545454;
+    cursor: pointer;
+}
+
+.content {
+    width: 800px;
+    background-color: #f6f7f7;
+    margin: 0px auto;
+    padding: 10px;
+    position: relative;
+}
+
+.content .addForm {
+    z-index: 9999;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -34px 0 0 -360px;
+
+    width: 720px;
+    height: 68px;
+    background-color: #f9faf9;
+    text-align: center;
+    padding-top: 20px;
+    box-sizing: border-box;
+    box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+.content .addForm form > input {
+    line-height: 28px;
+    margin-left: 10px;
+    border-radius: 2px;
+    box-sizing: border-box;
+}
+
+.content .addForm form > input[type=text] {
+    padding-left: 10px;
+}
+
+.content .addForm form .name {
+    width: 120px;
+}
+
+.content .addForm form .address {
+    width: 260px;
+}
+
+.content .addForm form .type {
+    width: 120px;
+}
+
+.content .addForm form .save {
+    background-color: #67aada;
+    color: #f8f9fa;
+    width: 100px;
+    cursor: pointer;
+}
+
+.content .addForm form .type:focus {
+    border-radius: 2px 2px 0 0;
+}
+
+.content .addForm form .type:focus + .select {
+    display: block;
+}
+
+.content .addForm .select {
+    display: none;
+    background-color: #FFF;
+    width: 120px;
+    position: absolute;
+    right: 148px;
+    top: 48px;
+    box-sizing: border-box;
+}
+
+.content .addForm .select span {
+    display: block;
+    width: 120px;
+    line-height: 25px;
+    text-align: center;
+    font-size: 12px;
+    cursor: pointer;
+    transition: all 200ms;
+}
+
+.content .addForm .select span:hover {
+    background-color: #d0d2d7;
+}
+
+.content .tool {
+    height: 20px;
+    /*background-color: aqua;*/
+}
+
+.content .tool span {
+    width: 30px;
+    line-height: 20px;
+    font-size: 12px;
+    float: right;
+}
+
+.content dl {
+    width: 800px;
+    /*background-color: tomato;*/
+    margin: 0 auto;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.content dl > dt {
+    width: 150px;
+    /*background-color: cadetblue;*/
+    float: left;
+    text-align: center;
+}
+
+.content dl > dt h3 {
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 28px;
+}
+
+.content dl > dd {
+    margin-left: 150px;
+    width: 650px;
+    overflow: hidden;
+    /*background-color: slateblue;*/
+}
+
+.content dl > dd > ul > li {
+    /*background-color: yellow;*/
+    width: 100px;
+    line-height: 28px;
+    float: left;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.content dl > dd > ul > li a {
+    display: inline-block;
+    width: 100%;
+    font-size: 14px;
+    color: #44505d;
+}

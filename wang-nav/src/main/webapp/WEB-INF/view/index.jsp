@@ -24,10 +24,10 @@
         <form id="addForm">
             <input type="text" class="name" placeholder="名称" name="name">
             <input type="text" class="url" placeholder="网址" name="url">
-            <select class="typeSelect" name="type">
+            <select class="typeSelect" name="type" id="type">
                 <option value="">未选择分类</option>
                 <c:forEach items="${typeList}" var="item">
-                    <option value="">${item.name}</option>
+                    <option value="${item.name}">${item.name}</option>
                 </c:forEach>
             </select>
             <input type="button" class="save" id="addSub" value="保存">
@@ -130,6 +130,8 @@
 
         $("#addSub").on("click", function () {
             var params = $("#addForm").serialize();
+            params[type] = $("#type ").val();
+
             $.ajax( {
                 type : "post",
                 url : "add",

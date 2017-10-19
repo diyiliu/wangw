@@ -1,11 +1,11 @@
 package com.diyiliu.nav.model;
 
 /**
- * Description: WebType
+ * Description: SiteType
  * Author: DIYILIU
  * Update: 2017-10-19 15:18
  */
-public class WebType {
+public class SiteType {
 
     private int id;
     private String code;

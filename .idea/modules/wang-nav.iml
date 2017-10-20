@@ -51,7 +51,7 @@
     <orderEntry type="library" scope="PROVIDED" name="Gradle: org.springframework:spring-context-support:4.2.5.RELEASE" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Gradle: org.springframework:spring-aop:4.2.5.RELEASE" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Gradle: org.springframework:spring-tx:4.2.5.RELEASE" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Gradle: org.springframework:spring-jdbc:4.2.5.RELEASE" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Gradle: commons-dbutils:commons-dbutils:1.7" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Gradle: com.alibaba:druid:1.1.2" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Gradle: mysql:mysql-connector-java:5.1.37" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Gradle: javax.servlet:servlet-api:2.5" level="project" />
@@ -74,7 +74,7 @@
     <orderEntry type="library" scope="RUNTIME" name="Gradle: org.springframework:spring-context-support:4.2.5.RELEASE" level="project" />
     <orderEntry type="library" scope="RUNTIME" name="Gradle: org.springframework:spring-aop:4.2.5.RELEASE" level="project" />
     <orderEntry type="library" scope="RUNTIME" name="Gradle: org.springframework:spring-tx:4.2.5.RELEASE" level="project" />
-    <orderEntry type="library" scope="RUNTIME" name="Gradle: org.springframework:spring-jdbc:4.2.5.RELEASE" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: commons-dbutils:commons-dbutils:1.7" level="project" />
     <orderEntry type="library" scope="RUNTIME" name="Gradle: com.alibaba:druid:1.1.2" level="project" />
     <orderEntry type="library" scope="RUNTIME" name="Gradle: mysql:mysql-connector-java:5.1.37" level="project" />
     <orderEntry type="library" scope="RUNTIME" name="Gradle: javax.servlet:servlet-api:2.5" level="project" />
@@ -97,7 +97,7 @@
     <orderEntry type="library" scope="TEST" name="Gradle: org.springframework:spring-context-support:4.2.5.RELEASE" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: org.springframework:spring-aop:4.2.5.RELEASE" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: org.springframework:spring-tx:4.2.5.RELEASE" level="project" />
-    <orderEntry type="library" scope="TEST" name="Gradle: org.springframework:spring-jdbc:4.2.5.RELEASE" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: commons-dbutils:commons-dbutils:1.7" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: com.alibaba:druid:1.1.2" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: mysql:mysql-connector-java:5.1.37" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: javax.servlet:servlet-api:2.5" level="project" />

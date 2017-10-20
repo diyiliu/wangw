@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import javax.annotation.Resource;
+import java.sql.SQLException;
 import java.util.List;
 
 /**
@@ -29,7 +30,7 @@ public class MainAction {
     private ICache siteTypeCacheProvider;
 
     @RequestMapping(value = "/add")
-    public @ResponseBody String add(Website site){
+    public @ResponseBody String add(Website site) throws SQLException {
         String type = site.getType();
         if (siteTypeCacheProvider.containsKey(type)){
             SiteType siteType = (SiteType) siteTypeCacheProvider.get(type);
@@ -40,7 +41,7 @@ public class MainAction {
     }
 
     @RequestMapping("/")
-    public String index(Model model) {
+    public String index(Model model) throws SQLException {
         List list = navDao.querySiteTypeList();
         model.addAttribute("typeList", list);
 

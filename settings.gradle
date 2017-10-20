@@ -1,3 +1,3 @@
 rootProject.name = 'wangw'
-include 'wang-nav'
+include 'wangw-nav'
 

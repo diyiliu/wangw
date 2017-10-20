@@ -73,9 +73,10 @@
                 data: params,
                 dataType: "text",
                 success: function (data) {
+                    console.log(data);
                     $("#addPanel").hide();
                     $("#reset").click();
-                    console.log(data);
+                    location.reload();
                 }
             });
         });

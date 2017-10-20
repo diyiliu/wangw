@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/wang-nav.iml" filepath="$PROJECT_DIR$/.idea/modules/wang-nav.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/wangw.iml" filepath="$PROJECT_DIR$/.idea/modules/wangw.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/wangw-nav.iml" filepath="$PROJECT_DIR$/.idea/modules/wangw-nav.iml" />
     </modules>
   </component>
 </project>

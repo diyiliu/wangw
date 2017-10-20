@@ -11,7 +11,7 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
-            <option value="$PROJECT_DIR$/wang-nav" />
+            <option value="$PROJECT_DIR$/wangw-nav" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />

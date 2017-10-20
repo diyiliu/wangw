@@ -1,6 +1,6 @@
 <component name="ArtifactManager">
-  <artifact type="exploded-war" name="Gradle : com.diyiliu : wang-nav.war (exploded)">
-    <output-path>$PROJECT_DIR$/wang-nav/build/libs/exploded/wang-nav.war</output-path>
+  <artifact type="exploded-war" name="Gradle : com.diyiliu : wangw-nav.war (exploded)">
+    <output-path>$PROJECT_DIR$/wangw-nav/build/libs/exploded/wangw-nav.war</output-path>
     <properties id="gradle-properties">
       <options external-project-path="$PROJECT_DIR$">
         <manifest>TWFuaWZlc3QtVmVyc2lvbjogMS4wDQoNCg==</manifest>
@@ -8,13 +8,13 @@
     </properties>
     <root id="root">
       <element id="directory" name="META-INF">
-        <element id="file-copy" path="$PROJECT_DIR$/wang-nav/build/libs/exploded/wang-nav.war/META-INF/MANIFEST.MF" />
+        <element id="file-copy" path="$PROJECT_DIR$/wangw-nav/build/libs/exploded/wangw-nav.war/META-INF/MANIFEST.MF" />
       </element>
-      <element id="javaee-facet-resources" facet="wang-nav/web/Web Gradle : wang-nav.war" />
+      <element id="javaee-facet-resources" facet="wangw-nav/web/Web Gradle : wangw-nav.war" />
       <element id="directory" name="WEB-INF">
         <element id="directory" name="classes">
-          <element id="module-output" name="wang-nav" />
-          <element id="dir-copy" path="$PROJECT_DIR$/wang-nav/out/production/resources" />
+          <element id="module-output" name="wangw-nav" />
+          <element id="dir-copy" path="$PROJECT_DIR$/wangw-nav/out/production/resources" />
         </element>
         <element id="directory" name="lib">
           <element id="library" level="project" name="Gradle: org.springframework:spring-beans:4.2.5.RELEASE" />
@@ -23,6 +23,8 @@
           <element id="library" level="project" name="Gradle: org.springframework:spring-context-support:4.2.5.RELEASE" />
           <element id="library" level="project" name="Gradle: org.springframework:spring-aop:4.2.5.RELEASE" />
           <element id="library" level="project" name="Gradle: org.springframework:spring-tx:4.2.5.RELEASE" />
+          <element id="library" level="project" name="Gradle: commons-dbutils:commons-dbutils:1.7" />
+          <element id="library" level="project" name="Gradle: com.alibaba:druid:1.1.2" />
           <element id="library" level="project" name="Gradle: mysql:mysql-connector-java:5.1.37" />
           <element id="library" level="project" name="Gradle: javax.servlet:servlet-api:2.5" />
           <element id="library" level="project" name="Gradle: javax.servlet:jstl:1.2" />
@@ -38,8 +40,6 @@
           <element id="library" level="project" name="Gradle: ch.qos.logback:logback-core:1.2.3" />
           <element id="library" level="project" name="Gradle: org.slf4j:slf4j-api:1.7.25" />
           <element id="library" level="project" name="Gradle: commons-logging:commons-logging:1.2" />
-          <element id="file-copy" path="$PROJECT_DIR$/../../../Local/repo/.gradle/caches/modules-2/files-2.1/commons-dbutils/commons-dbutils/1.7/a2d6e515aa87e5d38f6b3003e70b13c1b1f19ca0/commons-dbutils-1.7.jar" />
-          <element id="file-copy" path="$PROJECT_DIR$/../../../Local/repo/.gradle/caches/modules-2/files-2.1/com.alibaba/druid/1.1.2/ee952fe2b136c4effdcbfdc0cd1914c9064a9aba/druid-1.1.2.jar" />
         </element>
       </element>
     </root>

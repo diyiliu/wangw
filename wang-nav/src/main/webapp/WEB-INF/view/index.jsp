@@ -1,4 +1,4 @@
-<%@ page contentType="text/html;charset=UTF-8"%>
+<%@ page contentType="text/html;charset=UTF-8" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html>
@@ -31,95 +31,30 @@
                 </c:forEach>
             </select>
             <input type="button" class="save" id="addSub" value="保存">
+            <input type="reset" id="reset">
         </form>
     </div>
     <div class="tool">
         <a href="javascript:void(0);"><span class="edit">编辑</span></a>
         <a href="javascript:void(0);" id="add"><span class="add">添加</span></a>
     </div>
-    <dl>
-        <dt><h3>综合</h3></dt>
-        <dd>
-            <ul>
-                <li><a href="#">百度搜索</a></li>
-                <li><a href="#">百度搜索</a></li>
-                <li><a href="#">百度搜索</a></li>
-                <li><a href="#">百度搜索</a></li>
-                <li><a href="#">百度搜索</a></li>
-                <li><a href="#">百度搜索</a></li>
-                <li><a href="#">百度搜索</a></li>
-                <li><a href="#">百度搜索</a></li>
-                <li><a href="#">百度搜索</a></li>
-                <li><a href="#">百度搜索</a></li>
-                <li><a href="#">百度搜索</a></li>
-                <li><a href="#">百度搜索</a></li>
-                <li><a href="#">百度搜索</a></li>
-                <li><a href="#">百度搜索</a></li>
-                <li><a href="#">百度搜索</a></li>
-                <li><a href="#">百度搜索</a></li>
-                <li><a href="#">百度搜索</a></li>
-                <li><a href="#">百度搜索</a></li>
-                <li><a href="#">百度搜索</a></li>
-            </ul>
-        </dd>
-    </dl>
-    <dl>
-        <dt><h3>IT</h3></dt>
-        <dd>
-            <ul>
-                <li><a href="#">百度搜索</a></li>
-                <li><a href="#">百度搜索</a></li>
-                <li><a href="#">百度搜索</a></li>
-                <li><a href="#">百度搜索</a></li>
-                <li><a href="#">百度搜索</a></li>
-                <li><a href="#">百度搜索</a></li>
-                <li><a href="#">百度搜索</a></li>
-                <li><a href="#">百度搜索</a></li>
-                <li><a href="#">百度搜索</a></li>
-                <li><a href="#">百度搜索</a></li>
-                <li><a href="#">百度搜索</a></li>
-                <li><a href="#">百度搜索</a></li>
-                <li><a href="#">百度搜索</a></li>
-                <li><a href="#">百度搜索</a></li>
-                <li><a href="#">百度搜索</a></li>
-                <li><a href="#">百度搜索</a></li>
-                <li><a href="#">百度搜索</a></li>
-                <li><a href="#">百度搜索</a></li>
-                <li><a href="#">百度搜索</a></li>
-            </ul>
-        </dd>
-    </dl>
-    <dl>
-        <dt><h3>设计</h3></dt>
-        <dd>
-            <ul>
-                <li><a href="#">百度搜索</a></li>
-                <li><a href="#">百度搜索</a></li>
-                <li><a href="#">百度搜索</a></li>
-                <li><a href="#">百度搜索</a></li>
-                <li><a href="#">百度搜索</a></li>
-                <li><a href="#">百度搜索</a></li>
-                <li><a href="#">百度搜索</a></li>
-                <li><a href="#">百度搜索</a></li>
-                <li><a href="#">百度搜索</a></li>
-                <li><a href="#">百度搜索</a></li>
-                <li><a href="#">百度搜索</a></li>
-                <li><a href="#">百度搜索</a></li>
-                <li><a href="#">百度搜索</a></li>
-                <li><a href="#">百度搜索</a></li>
-                <li><a href="#">百度搜索</a></li>
-                <li><a href="#">百度搜索</a></li>
-                <li><a href="#">百度搜索</a></li>
-                <li><a href="#">百度搜索</a></li>
-                <li><a href="#">百度搜索</a></li>
-            </ul>
-        </dd>
-    </dl>
+    <c:forEach items="${groupList}" var="item">
+        <dl>
+            <dt><h3>${item.type}</h3></dt>
+            <dd>
+                <ul>
+                    <c:forEach items="${item.websiteList}" var="i">
+                        <li><a href="http://${i.url}" target="_blank">${i.name}</a></li>
+                    </c:forEach>
+                </ul>
+            </dd>
+        </dl>
+    </c:forEach>
 </div>
 
 <script type="text/javascript" src="./resources/js/jquery-3.2.1.js"></script>
 <script type="text/javascript">
-    $(document).ready(function(){
+    $(document).ready(function () {
         $("#add").on("click", function () {
             $("#addPanel").show();
         });
@@ -132,13 +67,14 @@
             var params = $("#addForm").serialize();
             params[type] = $("#type ").val();
 
-            $.ajax( {
-                type : "post",
-                url : "add",
-                data : params,
+            $.ajax({
+                type: "post",
+                url: "add",
+                data: params,
                 dataType: "text",
-                success : function(data) {
+                success: function (data) {
                     $("#addPanel").hide();
+                    $("#reset").click();
                     console.log(data);
                 }
             });

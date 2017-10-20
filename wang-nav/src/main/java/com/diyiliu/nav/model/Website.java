@@ -6,9 +6,18 @@ package com.diyiliu.nav.model;
  * Update: 2017-10-19 11:01
  */
 public class Website {
+    private Integer id;
     private String name;
     private String url;
     private String type;
+
+    public Integer getId() {
+        return id;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
+    }
 
     public String getName() {
         return name;

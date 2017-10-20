@@ -42,8 +42,11 @@ public class MainAction {
 
     @RequestMapping("/")
     public String index(Model model) throws SQLException {
-        List list = navDao.querySiteTypeList();
-        model.addAttribute("typeList", list);
+        List types = navDao.querySiteTypeList();
+        List groups = navDao.queryGroupSiteList();
+
+        model.addAttribute("typeList", types);
+        model.addAttribute("groupList", groups);
 
         return "index";
     }

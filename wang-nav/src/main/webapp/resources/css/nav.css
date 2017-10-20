@@ -145,6 +145,10 @@ body {
     box-sizing: border-box;
 }
 
+.content .addPanel form > input[type=reset]{
+    display: none;
+}
+
 .content .addPanel form > input[type=text] {
     padding-left: 10px;
 }
